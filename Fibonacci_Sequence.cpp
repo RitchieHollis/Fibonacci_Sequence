@@ -17,11 +17,11 @@ int main()
     cin >> size; 
     cout << endl;
 
-    int* tab = new int[size]; 
+    int* tab = new int[size]; //creating a dynamic table using "size"
 
     cout << "Your fibonacci table: " << endl << endl;
     for (int i = 0; i < size; i++) { 
-
+        //algorithm to create a fibonacci sequence
         sum = a + b;
         tab[i] = sum; 
         a = tab[i]; 
@@ -29,6 +29,7 @@ int main()
             b = b; 
         }
         else b = tab[i - 1]; 
+        //placing numbers nicely for better visibility
         if (i % 5 != 0 || i == 0) { 
             cout << tab[i] << "\t"; 
         }
