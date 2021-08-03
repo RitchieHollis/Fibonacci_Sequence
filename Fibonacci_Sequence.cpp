@@ -33,7 +33,7 @@ int main()
         if (i % 5 != 0 || i == 0) { 
             cout << tab[i] << "\t"; 
         }
-        else cout << tab[i] << endl; 
+        else cout << endl << tab[i] << "\t";
     }
 
     delete[] tab; 
